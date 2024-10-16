@@ -1,3 +1,5 @@
+/* style.css */
+
 /* Global Styles */
 /* Reset margins and paddings, set box-sizing to border-box */
 * {
@@ -166,7 +168,7 @@ html {
   max-width: 1200px;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  position: relative;
 }
 
 .slide-content {
@@ -192,11 +194,6 @@ html {
   margin-bottom: 1rem;
 }
 
-.slide-button {
-  margin-top: 1.5rem;
-  text-align: center;
-}
-
 .slide-image {
   flex: 1.5;
   margin-top: 2rem;
@@ -205,6 +202,38 @@ html {
 .slide-image img {
   width: 100%;
   height: auto;
+}
+
+/* Slide Button */
+.slide-button {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+@media (max-width: 768px) {
+  /* Adjust slide layout for mobile */
+  .slide-container {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+
+  .slide-content {
+    text-align: center;
+    order: 1;
+  }
+
+  .slide-image {
+    margin-top: 2rem;
+    order: 2;
+  }
+
+  .slide-button {
+    position: static;
+    margin-top: 2rem;
+    order: 3;
+  }
 }
 
 /* Swiper Pagination */
@@ -295,6 +324,20 @@ html {
   background: linear-gradient(to right, #718096, #4a5568); /* Darker gradient on hover */
 }
 
+/* Footer */
+.footer {
+  background-color: #2d3748;
+  color: white;
+  padding: 1rem 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
   /* Stack info section columns */
@@ -307,25 +350,9 @@ html {
   }
 }
 
-@media (max-width: 768px) {
-  /* Adjust slide layout for mobile */
-  .slide-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .slide-content {
-    order: 1;
-    text-align: center;
-  }
-
-  .slide-image {
-    order: 2;
-    margin-top: 2rem;
-  }
-
-  .slide-button {
-    order: 3;
-    margin-top: 2rem;
+@media (min-width: 1024px) {
+  /* Hide mobile menu on larger screens */
+  .mobile-menu {
+    display: none !important;
   }
 }

@@ -1,5 +1,3 @@
-// script.js
-
 // Hero to Slider Transition
 // Get the hero section and slider section elements
 const heroSection = document.getElementById('hero-section');

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLTK Sales - Simplify Your Sales Process</title>
+    <!-- Swiper CSS CDN (For Main Slider) -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Splide CSS CDN (For Logo Slider) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Section with Video -->
+    <section id="hero-section" class="hero-section">
+        <!-- Video Background -->
+        <div class="video-background">
+            <video id="hero-video" class="hero-video" autoplay muted playsinline loop>
+                <source src="Assets/Videos/office.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Overlay -->
+            <div class="video-overlay"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">Simplify Your Sales Process</h1>
+            <p class="hero-subtitle">Tailored Solutions to Drive Your Revenue Higher</p>
+            <a href="#contact" class="custom-button">
+                <span>Contact Us</span>
+                <svg class="button-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Partner Logos -->
+        <div id="partners" class="partners">
+            <div class="partners-container">
+                <p class="partners-text">Our Trusted Partners:</p>
+                <div class="partners-logos">
+                    <img src="Assets/Images/google.png" alt="Google" class="partner-logo">
+                    <img src="Assets/Images/amazon.png" alt="Amazon" class="partner-logo">
+                    <img src="Assets/Images/oracle.png" alt="Oracle" class="partner-logo">
+                    <img src="Assets/Images/salesforce.png" alt="Salesforce" class="partner-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider Section -->
+    <section id="slider-section" class="slider-section hidden">
+        <!-- Background Video -->
+        <div class="video-background">
+            <video id="slider-video" class="hero-video" autoplay muted playsinline loop>
+                <source src="Assets/Videos/background1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Overlay -->
+            <div class="video-overlay slider-overlay"></div>
+        </div>
+
+        <!-- Swiper Slider -->
+        <div class="swiper-container main-swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1: Training & Coaching -->
+                <div class="swiper-slide">
+                    <div class="slide-container">
+                        <!-- Left Content -->
+                        <div class="slide-content">
+                            <h2 class="slide-title" style="color: #0ea5e9;">Training &amp; Coaching</h2>
+                            <h3 class="slide-subtitle">Elevate Your Performance</h3>
+                            <p class="slide-text">We refine and elevate your existing team, driving success and continuous improvement.</p>
+                            <a href="#contact" class="custom-button slide-button" style="background: linear-gradient(to right, #22c55e, #3b82f6);">
+                                <span>Learn More</span>
+                                <svg class="button-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- Right Illustration -->
+                        <div class="slide-image">
+                            <img src="Assets/svg/teach.svg" alt="Training &amp; Coaching Illustration">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2: Sales Consulting -->
+                <div class="swiper-slide">
+                    <div class="slide-container">
+                        <!-- Left Content -->
+                        <div class="slide-content">
+                            <h2 class="slide-title" style="color: #ec4899;">Sales Consulting</h2>
+                            <h3 class="slide-subtitle">Optimize Your Strategy</h3>
+                            <p class="slide-text">Tailored guidance through every step without the commitment to fractional management.</p>
+                            <a href="#contact" class="custom-button slide-button" style="background: linear-gradient(to right, #ec4899, #a855f7);">
+                                <span>Learn More</span>
+                                <svg class="button-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- Right Illustration -->
+                        <div class="slide-image">
+                            <img src="Assets/svg/sales.svg" alt="Sales Consulting Illustration">
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3: Sales Process Audit -->
+                <div class="swiper-slide">
+                    <div class="slide-container">
+                        <!-- Left Content -->
+                        <div class="slide-content">
+                            <h2 class="slide-title" style="color: #facc15;">Sales Process Audit</h2>
+                            <h3 class="slide-subtitle">Identify Key Issues</h3>
+                            <p class="slide-text">We address root causes for lasting solutions and business growth.</p>
+                            <a href="#contact" class="custom-button slide-button" style="background: linear-gradient(to right, #facc15, #f97316);">
+                                <span>Learn More</span>
+                                <svg class="button-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <!-- Right Illustration -->
+                        <div class="slide-image">
+                            <img src="Assets/svg/rootcause.svg" alt="Sales Process Audit Illustration">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Logo Slider Section -->
+    <section id="logo-slider-section" class="logo-slider-section">
+        <div class="logo-slider-container">
+            <h2 class="logo-slider-title">Our Clients and Partners</h2>
+            <!-- Splide Slider -->
+            <div id="logo-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <!-- Logos -->
+                        <li class="splide__slide">
+                            <img src="Assets/Images/amazon.png" alt="Amazon Logo" class="logo-image">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Assets/Images/google.png" alt="Google Logo" class="logo-image">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Assets/Images/oracle.png" alt="Oracle Logo" class="logo-image">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Assets/Images/salesforce.png" alt="Salesforce Logo" class="logo-image">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Assets/Images/tata.png" alt="Tata Logo" class="logo-image">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Assets/Images/bbc.png" alt="BBC Logo" class="logo-image">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Assets/Images/disney.png" alt="Disney Logo" class="logo-image">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Assets/Images/dhl.png" alt="DHL Logo" class="logo-image">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Assets/Images/hitachi.png" alt="Hitachi Logo" class="logo-image">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Assets/Images/ceat.png" alt="CEAT Logo" class="logo-image">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Assets/Images/kantar-media.png" alt="Kantar Media Logo" class="logo-image">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Assets/Images/viacom-media.png" alt="Viacom Media Logo" class="logo-image">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="about" class="info-section">
+        <div class="info-container">
+            <!-- Left Column: Headline -->
+            <div class="info-left">
+                <h2 class="info-title">
+                    MLTK Sales specializes in giving your business clarity in its sales process.
+                </h2>
+                <div class="info-divider"></div>
+            </div>
+            <!-- Right Column: Company Description -->
+            <div class="info-right">
+                <p class="info-text">
+                    Work with MLTK to simplify your sales process and drive your revenue higher. Our expertise in sales training, coaching, and consulting helps businesses unlock their full potential.
+                </p>
+                <!-- CTA: Get In Touch -->
+                <a href="#contact" class="custom-button info-button">
+                    <span>Get In Touch</span>
+                    <svg class="button-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2023 MLTK Sales. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Swiper JS CDN (For Main Slider) -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Splide JS CDN (For Logo Slider) -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,355 @@
+/* style.css */
+
+/* Global Styles */
+/* Reset margins and paddings, set box-sizing to border-box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set font and base styles for body and html */
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #f7fafc; /* Light background */
+  color: #2d3748; /* Dark text color */
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 32, 44, 0.7); /* Semi-transparent overlay */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+/* Custom Button */
+.custom-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(to right, #48bb78, #4299e1); /* Green to blue gradient */
+  border-radius: 9999px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.custom-button:hover {
+  background: linear-gradient(to right, #38a169, #3182ce); /* Darker gradient on hover */
+}
+
+.button-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.custom-button:hover .button-icon {
+  transform: translateX(0.25rem);
+}
+
+/* Partners Section */
+.partners {
+  position: absolute;
+  bottom: 2.5rem;
+  width: 100%;
+  z-index: 2;
+}
+
+.partners-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.partners-text {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.partner-logo {
+  width: 6rem;
+  height: auto;
+}
+
+/* Slider Section */
+.slider-section {
+  position: relative;
+  height: 100vh;
+  display: none;
+}
+
+.slider-section.visible {
+  display: block;
+}
+
+.slider-overlay {
+  background: linear-gradient(to right, #312e81, #000, #312e81);
+  opacity: 0.6;
+}
+
+.main-swiper {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.slide-container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+}
+
+.slide-content {
+  flex: 1;
+  text-align: left;
+}
+
+.slide-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.slide-subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.slide-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.slide-button {
+  margin-top: 1.5rem;
+}
+
+.slide-image {
+  flex: 1.5;
+  margin-top: 2rem;
+}
+
+.slide-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+  background: white;
+}
+
+.swiper-pagination-bullet-active {
+  background: #48bb78; /* Match the button gradient */
+}
+
+/* Logo Slider Section */
+.logo-slider-section {
+  padding: 2rem 0;
+  background-color: #f7fafc;
+}
+
+.logo-slider-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-slider-title {
+  font-size: 1.875rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #2d3748;
+  text-align: center;
+}
+
+.logo-image {
+  max-width: 111px;
+  height: auto;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* Info Section */
+.info-section {
+  background-color: #f7fafc;
+  color: #2d3748;
+  padding: 4rem 0;
+}
+
+.info-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+
+.info-left,
+.info-right {
+  flex: 1;
+}
+
+.info-title {
+  font-size: 2.25rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.info-divider {
+  width: 4rem;
+  height: 0.25rem;
+  background-color: #2d3748;
+  margin: 1rem 0 1.5rem;
+}
+
+.info-text {
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+
+.info-button {
+  margin-top: 1.5rem;
+  background: linear-gradient(to right, #a0aec0, #718096); /* Gray gradient */
+  color: white;
+}
+
+.info-button:hover {
+  background: linear-gradient(to right, #718096, #4a5568); /* Darker gradient on hover */
+}
+
+/* Footer */
+.footer {
+  background-color: #2d3748;
+  color: white;
+  padding: 1rem 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  /* Hide desktop menu */
+  .nav-menu {
+    display: none;
+  }
+
+  /* Show mobile menu button */
+  .mobile-menu-button {
+    display: block;
+  }
+
+  /* Stack info section columns */
+  .info-container {
+    flex-direction: column;
+  }
+
+  .info-right {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Hide mobile menu on larger screens */
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust slide layout for mobile */
+  .slide-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .slide-content {
+    text-align: center;
+  }
+
+  .slide-image {
+    margin-top: 2rem;
+  }
+}
